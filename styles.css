@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+dd {
+  margin-left: 0;
+}
+
+dt {
+  clear: left;
+  float: left;
+  margin-right: 10px;
+  text-align: center;
+  width: 30px;
+}
+
+h1,
+h2 {
+  margin-bottom: 1rem;
+}
+  h1 + *,
+  h2 + * {
+    margin-top: 1rem;
+  }
+
+h3,
+h4 {
+  margin-bottom: 0.5rem;
+}
+  h3 + *,
+  h4 + * {
+    margin-top: 0.5rem;
+  }
+
+p {
+  text-align: justify;
+}
+
+section {
+  margin-bottom: 2em;
+}
+
+section.education h3,
+section.experience h3 {
+  line-height: 1;
+}
+  section.education h3 small,
+  section.experience h3 small,
+  section.experience h4 small {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1rem;
+  }
+
+section.education ol,
+section.experience ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+section.experience ul {
+  margin: 0 0 1em;
+  padding-left: 20px;
+}
+  section.experience ul li {
+    list-style-type: disc;
+  }
+
+section.languages ul {
+  margin: 0;
+}
+
+section.languages .row {
+  margin-bottom: 1em;
+  margin-top: 1rem;
+}
+
+.list-unstyled {
+  padding-left: 0;
+}
+  .list-unstyled li {
+    list-style: none;
+  }
+
+@media print {
+  a {
+    color: inherit;
+  }
+
+  h1, h2, h3 {
+    break-after: avoid;
+  }
+
+  h1 {
+    font-size: 32px;
+    margin-top: 0;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  h5 {
+    font-size: 16px;
+  }
+
+  .avoid-breaking {
+    break-inside: avoid;
+  }
+}
