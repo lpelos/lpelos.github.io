@@ -1,5 +1,6 @@
-* {
-  box-sizing: border-box;
+body {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 
 dd {
@@ -14,35 +15,14 @@ dt {
   width: 30px;
 }
 
-h1,
-h2 {
-  margin-bottom: 1rem;
-}
-  h1 + *,
-  h2 + * {
-    margin-top: 1rem;
-  }
-
-h3,
-h4 {
-  margin-bottom: 0.5rem;
-}
-  h3 + *,
-  h4 + * {
-    margin-top: 0.5rem;
-  }
-
-p {
-  text-align: justify;
-}
-
 section {
-  margin-bottom: 2em;
+  margin-top: 2rem;
 }
 
 section.education h3,
 section.experience h3 {
   line-height: 1;
+  margin-top: 1.5rem;
 }
   section.education h3 small,
   section.experience h3 small,
@@ -69,17 +49,11 @@ section.languages ul {
   margin: 0;
 }
 
-section.languages .row {
-  margin-bottom: 1em;
-  margin-top: 1rem;
-}
-
-.list-unstyled {
-  padding-left: 0;
-}
-  .list-unstyled li {
-    list-style: none;
+@media (min-width: 1200px) {
+  .container {
+    max-width: 960px;
   }
+}
 
 @media print {
   a {
